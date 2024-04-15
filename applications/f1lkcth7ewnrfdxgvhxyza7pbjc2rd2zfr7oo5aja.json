@@ -36,11 +36,11 @@
     "Weekly Allocation": "1TiB"
   },
   "Lifecycle": {
-    "State": "ReadyToSign",
+    "State": "Granted",
     "Validated At": "2024-04-15 03:37:50.646503328 UTC",
     "Validated By": "luobin544",
     "Active": true,
-    "Updated At": "2024-04-15 03:37:50.646507782 UTC",
+    "Updated At": "2024-04-15 03:41:21.968451573 UTC",
     "Active Request ID": "2c45b4cb-59b4-4651-a12b-a10ae209d8b5",
     "On Chain Address": "f1lkcth7ewnrfdxgvhxyza7pbjc2rd2zfr7oo5aja",
     "Multisig Address": "false",
@@ -52,9 +52,16 @@
       "Request Type": "First",
       "Created At": "2024-04-15 03:37:50.646509153 UTC",
       "Updated At": "2024-04-15 03:37:50.646509800 UTC",
-      "Active": true,
+      "Active": false,
       "Allocation Amount": "1TiB",
-      "Signers": []
+      "Signers": [
+        {
+          "Github Username": "luobin544",
+          "Signing Address": "f1tbd632f6w62glfaf7wjpimacbnjiz26poyoes2q",
+          "Created At": "2024-04-15 03:41:18.835000000 UTC",
+          "Message CID": "bafy2bzaceb6jooylsakbenznsqpcgwihmabdlojls3eydyglni2rqmb4e2bfw"
+        }
+      ]
     }
   ]
 }
