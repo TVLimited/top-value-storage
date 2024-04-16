@@ -36,11 +36,11 @@
     "Weekly Allocation": "1Pib"
   },
   "Lifecycle": {
-    "State": "ReadyToSign",
+    "State": "Granted",
     "Validated At": "2024-04-16 07:25:56.743532720 UTC",
     "Validated By": "luobin544",
     "Active": true,
-    "Updated At": "2024-04-16 07:25:56.743536447 UTC",
+    "Updated At": "2024-04-16 07:26:31.559294314 UTC",
     "Active Request ID": "b81250b5-bfa0-42bf-955a-34ba0dc53997",
     "On Chain Address": "f1nxnnk45gqynlfwkdjspp6phoekmfo6niocczk2a",
     "Multisig Address": "false",
@@ -52,9 +52,16 @@
       "Request Type": "First",
       "Created At": "2024-04-16 07:25:56.743537703 UTC",
       "Updated At": "2024-04-16 07:25:56.743538342 UTC",
-      "Active": true,
+      "Active": false,
       "Allocation Amount": "1PiB",
-      "Signers": []
+      "Signers": [
+        {
+          "Github Username": "luobin544",
+          "Signing Address": "f1tbd632f6w62glfaf7wjpimacbnjiz26poyoes2q",
+          "Created At": "2024-04-16 07:26:28.997000000 UTC",
+          "Message CID": "bafy2bzacea26z27i3hsddasbe7u42bhgf5wvf33pgznyvmxjxkvwndq3kwaum"
+        }
+      ]
     }
   ]
 }
