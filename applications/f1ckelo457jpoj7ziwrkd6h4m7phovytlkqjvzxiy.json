@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "ID": "f1ckelo457jpoj7ziwrkd6h4m7phovytlkqjvzxiy",
+  "Issue Number": "11",
+  "Client": {
+    "Name": "NOAA",
+    "Region": "United States",
+    "Industry": "Other",
+    "Website": "https://vlab.noaa.gov/web/ufs-r2o,https://registry.opendata.aws/noaa-rrfs",
+    "Social Media": "Website: https://www.noaa.gov/ Twitter: https://twitter.com/NOAA",
+    "Social Media Type": "Slack",
+    "Role": "Other"
+  },
+  "Project": {
+    "Project Id": "1",
+    "Brief history of your project and organization": "The Rapid Refresh Forecast System (RRFS) is the National Oceanic and Atmospheric Administration’s (NOAA) next generation convection-allowing, rapidly-updated ensemble prediction system, currently scheduled for operational implementation in 2024. The operational configuration will feature a 3 km grid covering North America and include deterministic forecasts every hour out to 18 hours, with deterministic and ensemble forecasts to 60 hours four times per day at 00, 06, 12, and 18 UTC.The RRFS will provide guidance to support forecast interests including, but not limited to, aviation, severe convective weather, renewable energy, heavy precipitation, and winter weather on timescales where rapidly-updated guidance is particularly useful.",
+    "Is this project associated with other projects/ecosystem stakeholders?": "No",
+    "Describe the data being stored onto Filecoin": "experiments dataset.",
+    "Where was the data currently stored in this dataset sourced from": "AWS Cloud",
+    "How do you plan to prepare the dataset": "No response",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "aws s3 ls --no-sign-request s3://noaa-rrfs-pds/ --recursive --human-readable --summarize | grep Total \r\nTotal Objects: 12634735\r\nTotal Size: 2 PiB",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "[ ] I confirm",
+    "What is the expected retrieval frequency for this data": "Yearly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "Less than 1 year",
+    "In which geographies do you plan on making storage deals": "Greater China, Asia other than Greater China, Africa, North America, South America, Europe, Australia (continent), Antarctica",
+    "How will you be distributing your data to storage providers": "Cloud storage (i.e. S3)",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "1.f02813403 UK\r\n2.f02814393 US\r\n3.f02830321 VN\r\n4.f02837226 UK\r\n5.f02864300 US",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "5000TiB",
+    "Single Size Dataset": "1000TiB",
+    "Replicas": 5,
+    "Weekly Allocation": "1000TiB"
+  },
+  "Lifecycle": {
+    "State": "Granted",
+    "Validated At": "2024-04-17 03:48:43.057609388 UTC",
+    "Validated By": "luobin544",
+    "Active": true,
+    "Updated At": "2024-04-17 03:49:54.641416827 UTC",
+    "Active Request ID": "ba457430-79e4-4ef3-99c2-400fd63de11a",
+    "On Chain Address": "f1ckelo457jpoj7ziwrkd6h4m7phovytlkqjvzxiy",
+    "Multisig Address": "false",
+    "edited": false
+  },
+  "Allocation Requests": [
+    {
+      "ID": "ba457430-79e4-4ef3-99c2-400fd63de11a",
+      "Request Type": "First",
+      "Created At": "2024-04-17 03:48:43.057615354 UTC",
+      "Updated At": "2024-04-17 03:48:43.057616067 UTC",
+      "Active": false,
+      "Allocation Amount": "1PiB",
+      "Signers": [
+        {
+          "Github Username": "luobin544",
+          "Signing Address": "f1tbd632f6w62glfaf7wjpimacbnjiz26poyoes2q",
+          "Created At": "2024-04-17 03:49:52.344000000 UTC",
+          "Message CID": "bafy2bzacedc77gajjwppuv3jibc4uynu4z33e3boja7dxpjrshrfddjpli3mk"
+        }
+      ]
+    }
+  ]
+}
