@@ -1,6 +1,6 @@
 name: KYB Document
 description: Provide the necessary KYB information for our Storage Service Providers
-title: "[KYB] - Storge Provider"
+title: "[KYB] - <Storge Provider>"
 labels: ["KYB", "Storage Service Provider"]
 assignees: []
 
