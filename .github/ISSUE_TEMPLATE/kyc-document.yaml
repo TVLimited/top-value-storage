@@ -1,0 +1,252 @@
+name: Storage Service Client KYC Document
+description: Use this template to submit KYC documents for storage service clients.
+title: "[KYC Document] <Client Name>"
+body:
+- type: markdown
+  attributes:
+    value: |
+      # Storage Service Client KYC Document
+      Please fill out the following form to submit your KYC documents.
+
+- type: markdown
+  attributes:
+    value: |
+      ## Client Profile
+
+- type: input
+  attributes:
+    label: Client Name
+    description: Full legal name of the client
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Client UEN
+    description: Unique Entity Number / Business Registration ID of the client
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Client Address
+    description: Full address of the client
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Primary Contact Person
+    description: Contact Person Name
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Contact Email
+    description: Email address for contact
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Contact Phone Number
+    description: Phone number for contact
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Website URL
+    description: URL for client
+  validations:
+    required: false
+
+- type: markdown
+  attributes:
+    value: |
+      ## Business Background
+
+- type: textarea
+  attributes:
+    label: Describe Your Business
+    description: Provide a detailed description of your business
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Key Products and Services
+    description: List the key products and services offered by your business
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Years of Operation
+    description: Indicate the number of years your business has been in operation
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Operating Countries
+    description: List the countries where your business operates
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: |
+      ## Previous Data Storage Usage
+
+- type: dropdown
+  attributes:
+    label: Previous Usage of Data Storage Service
+    description: Have you previously used any data storage service?
+    options:
+      - Yes
+      - No
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Previous Data Storage Providers
+    description: If yes, please detail the previous data storage providers
+    render: dynamic
+    depends_on:
+      - Previous Usage of Data Storage Service
+    condition:
+      - equals: Yes
+  validations:
+    required: false
+
+- type: markdown
+  attributes:
+    value: |
+      ## Previous Data Storage Usage
+
+- type: dropdown
+  attributes:
+    label: Usage of Data Storage Services
+    description: Have you previously used any data storage service?
+    options:
+      - Yes
+      - No
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Previous Data Storage Service Providers
+    description: If yes, please detail the previous data storage service providers
+    render: dynamic
+    depends_on:
+      - Usage of Data Storage Services
+    condition:
+      - equals: Yes
+  validations:
+    required: false
+
+- type: markdown
+  attributes:
+    value: |
+      ## Data Storage Requirements Analysis
+
+- type: input
+  attributes:
+    label: Estimated Data Volume for Storage (in terabytes)
+    description: Provide an estimate of the data volume you need to store (in terabytes)
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Data Type Description
+    description: Describe the type of data (e.g., general, sensitive, regulated)
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Compliance Requirements
+    description: List any compliance requirements (e.g., GDPR, HIPAA)
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: |
+      ## Service Specifications
+
+- type: input
+  attributes:
+    label: Desired Data Storage Services
+    description: Specify the desired data storage services (e.g., cloud storage, dedicated servers)
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Technical Specifications
+    description: Provide technical specifications (e.g., encryption, access control)
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Expected Support Response Time
+    description: Indicate the expected support response time
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: |
+      ## Security and Privacy Concerns
+
+- type: textarea
+  attributes:
+    label: Primary Data Security and Privacy Concerns
+    description: Describe your primary data security and privacy concerns
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Current Data Security Policies/Protocols
+    description: Provide details of your current data security policies and protocols
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: |
+      ## Budget and Implementation Timeline
+
+- type: input
+  attributes:
+    label: Estimated Budget for Data Storage Services
+    description: Provide an estimate of the budget for data storage services
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Planned Start Date for Data Storage Services
+    description: Indicate the planned start date for data storage services
+  validations:
+    required: true
+
+- type: markdown
+  attributes:
+    value: |
+      ## Additional Information
+
+- type: textarea
+  attributes:
+    label: Other Relevant Requirements or Information
+    description: Provide any other relevant requirements or information
+  validations:
+    required: false
