@@ -1,0 +1,73 @@
+name: KYB Document
+description: Provide the necessary KYB information for our Storage Service Providers
+title: "[KYB] - Storge Provider"
+labels: ["KYB", "Storage Service Provider"]
+assignees: []
+
+body:
+  - type: input
+    attributes:
+      label: Storage Provider Name
+      description: Enter the name of the storage provider
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Business Registration Number
+      description: Enter the business registration number
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Country of Registration
+      description: Enter the country where the business is registered
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Registered Business Address
+      description: Enter the registered business address
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Contact Person
+      description: Enter the name of the contact person
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Business Description
+      description: Provide a brief description of the business
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Services Provided
+      description: Describe the services provided by the business
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Compliance and Certifications
+      description: List any compliance and certifications the business holds
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Additional Information
+  - type: textarea
+    attributes:
+      label: Other Relevant Information
+      description: Provide any other relevant information
+    validations:
+      required: false

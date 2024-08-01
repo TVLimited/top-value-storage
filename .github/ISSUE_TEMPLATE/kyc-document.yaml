@@ -31,24 +31,6 @@ body:
     required: true
 - type: input
   attributes:
-    label: Primary Contact Person
-    description: Contact Person Name
-  validations:
-    required: true
-- type: input
-  attributes:
-    label: Contact Email
-    description: Email address for contact
-  validations:
-    required: true
-- type: input
-  attributes:
-    label: Contact Phone Number
-    description: Phone number for contact
-  validations:
-    required: true
-- type: input
-  attributes:
     label: Website URL
     description: URL for client
   validations:
