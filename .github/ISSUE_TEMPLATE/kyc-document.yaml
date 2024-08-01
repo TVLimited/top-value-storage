@@ -90,19 +90,14 @@ body:
     label: Previous Usage of Data Storage Service
     description: Have you previously used any data storage service?
     options:
-      - Yes
-      - No
+      - 'Yes'
+      - 'No'
   validations:
     required: true
 - type: textarea
   attributes:
     label: Previous Data Storage Providers
     description: If yes, please detail the previous data storage providers
-    render: dynamic
-    depends_on:
-      - Previous Usage of Data Storage Service
-    condition:
-      - equals: Yes
   validations:
     required: false
 - type: markdown
@@ -114,19 +109,14 @@ body:
     label: Usage of Data Storage Services
     description: Have you previously used any data storage service?
     options:
-      - Yes
-      - No
+      - 'Yes'
+      - 'No'
   validations:
     required: true
 - type: textarea
   attributes:
     label: Previous Data Storage Service Providers
     description: If yes, please detail the previous data storage service providers
-    render: dynamic
-    depends_on:
-      - Usage of Data Storage Services
-    condition:
-      - equals: Yes
   validations:
     required: false
 - type: markdown
